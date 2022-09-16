@@ -26,6 +26,7 @@ def is_even(x):
     # else:
     #     return False
     
-    return True if x % 2 == 0 else False        #refactor 4 lines into 1
+    # return True if x % 2 == 0 else False        #refactor 4 lines into 1
+    return x % 2 == 0                             #refactor if else into assumption
 
 main()
