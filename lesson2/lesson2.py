@@ -56,32 +56,52 @@
 #         print('No')
 
 
+# def main():
+#     expression = str(input("Enter an Expression of MATHS!!!! "))
+#     x, y, z = expression.split()
+
+#     x = float(x)
+#     z = float(z)
+
+#     match y:
+#         case '+':
+#             print(add(x,z))
+#         case '-':
+#             print(sub(x,z))
+#         case '*':
+#             print(mult(x,z))
+#         case '/':
+#             print(div(x,z))
+#         case _:
+#             print('Ya done fucked it mate.')
+
+# def add(x,z):
+#     return x + z
+# def sub(x,z):
+#     return x - z
+# def mult(x,z):
+#     return round(x * z, 2)
+# def div(x,z):
+#     return round(x / z, 3)
+
+# main()
+
+
 def main():
-    expression = str(input("Enter an Expression of MATHS!!!! "))
-    x, y, z = expression.split()
+    time = str(input('What time it is? '))
+    hours, minutes = time.split(':')                    #split the string into two strings
 
-    x = float(x)
-    z = float(z)
+    timeToEat = float(convert(hours, minutes))          #set the conversion function to a variable
 
-    match y:
-        case '+':
-            print(add(x,z))
-        case '-':
-            print(sub(x,z))
-        case '*':
-            print(mult(x,z))
-        case '/':
-            print(div(x,z))
-        case _:
-            print('Ya done fucked it mate.')
+    
 
-def add(x,z):
-    return x + z
-def sub(x,z):
-    return x - z
-def mult(x,z):
-    return round(x * z, 2)
-def div(x,z):
-    return round(x / z, 3)
 
-main()
+
+def convert(hours, minutes):
+    hours = float(hours)                                #convert to float
+    minutes = round(float(minutes) / 60, 2)             #convert minutes to float, divide that by 60 for the hour, round the float to 2nd place
+    return float(hours) + float(minutes)                #return the minutes added to hours
+
+
+if __name__ == "__main__":
+    main()
