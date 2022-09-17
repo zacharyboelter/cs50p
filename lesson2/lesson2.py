@@ -72,6 +72,8 @@ def main():
             print(mult(x,z))
         case '/':
             print(div(x,z))
+        case _:
+            print('Ya done fucked it mate.')
 
 def add(x,z):
     return x + z
