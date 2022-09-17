@@ -93,8 +93,14 @@ def main():
 
     timeToEat = float(convert(hours, minutes))          #set the conversion function to a variable
 
-    
-
+    if timeToEat >= 7 and timeToEat <= 8:
+        print('Bacon and eggs for breakky!!!!')
+    elif timeToEat >=12 and timeToEat <= 13:
+        print('Lets make a sandwich for lunch?')        #set conditionals for what meal of the day timeToEat falls into
+    elif timeToEat >= 18 and timeToEat <=20:
+        print('What do you want for dinner?')
+    else:
+        print('Go for a run, its no time to eat')
 
 
 def convert(hours, minutes):
