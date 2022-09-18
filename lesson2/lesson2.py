@@ -151,30 +151,49 @@
 # def divide(x, z):
 #     return round(x / z, 3)
 
-# main()
+# # main()
 
 
 
-def main():
-    userTxt = str(input('What time is it? '))
-    hours, minutes = userTxt.split(':')
-    mealTime = convert(hours, minutes)
-    # print(mealTime)
+# def main():
+#     userTxt = str(input('What time is it? '))
+#     hours, minutes = userTxt.split(':')
+#     mealTime = convert(hours, minutes)
+#     # print(mealTime)
 
-    if mealTime >= 7 and mealTime <= 8:
-        print('Its breakfast time!')
-    elif mealTime >= 12 and mealTime <= 14:
-        print('Lunch time!')
-    elif mealTime >= 18 and mealTime <=21:
-        print('Spanish dinner! Tapas baby!')
-    else: 
-        print('No soup for you!')
+#     if mealTime >= 7 and mealTime <= 8:
+#         print('Its breakfast time!')
+#     elif mealTime >= 12 and mealTime <= 14:
+#         print('Lunch time!')
+#     elif mealTime >= 18 and mealTime <=21:
+#         print('Spanish dinner! Tapas baby!')
+#     else: 
+#         print('No soup for you!')
 
-def convert(hours, minutes):
-    hours = float(hours)
-    minutes = round(float(minutes) / 60, 2)
-    return hours + minutes
+# def convert(hours, minutes):
+#     hours = float(hours)
+#     minutes = round(float(minutes) / 60, 2)
+#     return hours + minutes
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+
+
+def oddOrEven(n):
+    if n % 2 == 0:
+        print('even')
+    else:
+        print('odd')
+
+# oddOrEven(20)
+# oddOrEven(21)
+# oddOrEven(1)
+
+def is_odd_or_even(n):
+    return 'Odd' if  n % 2 else "Even"
+
+print(is_odd_or_even(43))
+print(is_odd_or_even(432))
+print(is_odd_or_even(431))
+print(is_odd_or_even(4341414))
