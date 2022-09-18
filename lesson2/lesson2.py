@@ -180,20 +180,65 @@
 #     main()
 
 
-def oddOrEven(n):
-    if n % 2 == 0:
-        print('even')
-    else:
-        print('odd')
+# def oddOrEven(n):
+#     if n % 2 == 0:
+#         print('even')
+#     else:
+#         print('odd')
 
 # oddOrEven(20)
 # oddOrEven(21)
 # oddOrEven(1)
 
-def is_odd_or_even(n):
-    return 'Odd' if  n % 2 else "Even"
+# def is_odd_or_even(n):
+#     return 'Odd' if  n % 2 else "Even"
 
-print(is_odd_or_even(43))
-print(is_odd_or_even(432))
-print(is_odd_or_even(431))
-print(is_odd_or_even(4341414))
+# print(is_odd_or_even(43))
+# print(is_odd_or_even(432))
+# print(is_odd_or_even(431))
+# print(is_odd_or_even(4341414))
+
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Check for factor or no~~~~~~~~~~~~~~~
+# This function should test if the factor is a factor of base.
+
+# Return true if it is a factor or false if it is not.
+# About factors
+
+# Factors are numbers you can multiply together to get another number.
+
+# 2 and 3 are factors of 6 because: 2 * 3 = 6
+
+#     You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
+#     You can use the mod operator (%) in most languages to check for a remainder
+
+# For example 2 is not a factor of 7 because: 7 % 2 = 1
+
+# Note: base is a non-negative number, factor is a positive number.
+
+
+def checkFactor(b, fac):
+    if b % fac == 0:
+        return True
+    return False
+print(checkFactor(30, 2))
+
+
+
+def check_for_factor(f, b):
+    return 'false' if b % f else 'true'             #one way
+
+# print(check_for_factor(3, 6))    
+
+def factorOrNot(base, factor):                      #another way
+    return base % factor == 0
+
+print(factorOrNot(30, 2))
+# print(factorOrNot(30, 22))
+# print(factorOrNot(309999, 220))
+# print(factorOrNot(10, 2))
+# print(factorOrNot(15, 3))
+
+print(30 % 2)
