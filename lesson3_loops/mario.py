@@ -41,3 +41,6 @@ for i in name:
         i = new_name
     print(i, end="")
     print()
+
+
+print(12.0 / 3)
