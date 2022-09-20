@@ -39,15 +39,42 @@
 
 
 
-students = ['Harry', 'Ron', 'Hermione', 'Draco']
-houses = ['Gryffindor', 'Gryffindor', 'Gryffindor', 'Slytherin']
+# students = ['Harry', 'Ron', 'Hermione', 'Draco']
+# houses = ['Gryffindor', 'Gryffindor', 'Gryffindor', 'Slytherin']
 
-hogwarts = {
-    'Harry': 'Gryffindor', 
-    'Ron': 'Gryffindor',
-    'Hermione': 'Gryffindor',
-    'Draco': 'Slytherin'
+# hogwarts = {
+#     'Harry': 'Gryffindor', 
+#     'Ron': 'Gryffindor',
+#     'Hermione': 'Gryffindor',
+#     'Draco': 'Slytherin'
+#     }
+
+# for student in hogwarts:
+#     print(student, hogwarts[student], sep=" ~ House: ")
+
+students = [
+    {
+        'name': 'Harry',
+        'house': 'Gryffindor',
+        'petronus': 'Stag'
+    },
+    {
+        'name': 'Ron',
+        'house': 'Gryffindor',
+        'petronus': 'Jack Russel Terrier'
+    },
+    {
+        'name': 'Hermione',
+        'house': 'Gryffindor',
+        'petronus': 'Otter'
+    },
+    {
+        'name': 'Draco',
+        'house': 'Slytherin',
+        'petronus': None
     }
 
-for student in hogwarts:
-    print(student, hogwarts[student], sep=" ~ House: ")
+]
+
+for student in students:
+    print(student['name'], student['house'], student['petronus'], sep=', ')
