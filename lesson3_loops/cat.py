@@ -185,10 +185,24 @@
 #         return name + ' does not play banjo'
 
 #return low and high with two separate functions
-def minimum(arr):
-    arr.sort()
-    return arr[0]
+# def minimum(arr):
+#     arr.sort()
+#     return arr[0]
 
-def maximum(arr):
-    arr.sort()
-    return arr[-1]
+# def maximum(arr):
+#     arr.sort()
+#     return arr[-1]
+
+
+#BMI Calculator
+
+def bmi(weight, height):
+    body = weight / (height ** 2)
+    if body <= 18.5:
+        return 'Underweight'
+    elif body <=25.0:
+        return 'Normal'
+    elif body <= 30.0:
+        return 'Overweight'
+    elif body > 30:
+        return 'Obese'
