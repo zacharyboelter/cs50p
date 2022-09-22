@@ -142,11 +142,14 @@
 # counts = { 'quincy' : 1 , 'mrugesh' : 42, 'beau': 100, '0': 10}
 # print(counts.get('kris', 0))
 
-text = input('Enter a camelCase phrase: ')
 
-for i in text:
-    if i.isupper():
-        new_text = '_' + i.lower()
-        i = new_text
-    print(i, end='')
+def snake_case():
+    text = input('Enter a camelCase phrase: ')
 
+    for i in text:
+        if i.isupper():
+            new_text = '_' + i.lower()
+            i = new_text
+        print(i, end='')
+
+snake_case()
