@@ -143,13 +143,43 @@
 # print(counts.get('kris', 0))
 
 
-def snake_case():
-    text = input('Enter a camelCase phrase: ')
+# def snake_case():
+#     text = input('Enter a camelCase phrase: ')
 
-    for i in text:
-        if i.isupper():
-            new_text = '_' + i.lower()
-            i = new_text
-        print(i, end='')
+#     for i in text:
+#         if i.isupper():
+#             new_text = '_' + i.lower()
+#             i = new_text
+#         print(i, end='')
 
-snake_case()
+# snake_case()
+
+
+
+# amount_due = 50
+
+# while amount_due > 0:
+#     coins = int(input('Insert a coin: '))
+
+#     if coins <= 0:
+#         print('Invalid Amount you fuck. Try again: ')
+
+#     if coins == 25 or coins == 10 or coins == 5:
+#         amount_due -= coins
+
+#         if amount_due <= 0:
+#             break
+#             print(0)
+#         print(f'Amount due: {str(amount_due)}')
+#     else: 
+#         print(50)
+# print(f'Change due: {str(abs(amount_due))}')
+
+print(type(amount_due))
+
+
+def areYouPlayingBanjo(name):
+    if name.startswith('R') or name.startswith('r'):
+        return name + ' plays banjo'
+    else:
+        return name + ' does not play banjo'
