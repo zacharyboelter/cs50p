@@ -80,10 +80,50 @@
 #     print(student['name'], student['house'], student['petronus'], sep=', ')
 
 
-c = input('CamelCase? ')
+# c = input('CamelCase? ')
 
-for i in c:                             #iterate through str from input
-    if i.isupper():                     #if the element is uppercase
-        new_c = '_' + i.lower()         #change to lower case and append to _ and store in var
-        i = new_c                       #set i to new var
-    print(i, end="")                    #print new var
+# for i in c:                             #iterate through str from input
+#     if i.isupper():                     #if the element is uppercase
+#         new_c = '_' + i.lower()         #change to lower case and append to _ and store in var
+#         i = new_c                       #set i to new var
+#     print(i, end="")                    #print new var
+
+
+# def main():
+#     math = str(input('Enter an expresseion for solving: '))
+#     print(math)
+#     x, y, z = math.split()
+
+#     x = float(x)
+#     z = float(z)
+
+#     match 
+    
+#     # match y:
+#     #     case '+':
+#     #         print(add(x, z))
+#     #     case '-':
+#     #         print(subract(x, z))
+#     #     case '*':
+#     #         print(multiply(x, z))
+#     #     case '/':
+#     #         print(divide(x, z))
+
+# def add(x, z):
+#     return x + z
+
+# def subtract(x, z):
+#     return x - z
+
+# def multiply(x, z):
+#     return round(x * z, 3)
+
+# def divide(x, z):
+#     return round(x / z, 3)
+
+# main()
+
+
+
+main()
+    txt = input('')
