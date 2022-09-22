@@ -175,11 +175,20 @@
 #         print(50)
 # print(f'Change due: {str(abs(amount_due))}')
 
-print(type(amount_due))
+# print(type(amount_due))
 
 
-def areYouPlayingBanjo(name):
-    if name.startswith('R') or name.startswith('r'):
-        return name + ' plays banjo'
-    else:
-        return name + ' does not play banjo'
+# def areYouPlayingBanjo(name):
+#     if name.startswith('R') or name.startswith('r'):
+#         return name + ' plays banjo'
+#     else:
+#         return name + ' does not play banjo'
+
+#return low and high with two separate functions
+def minimum(arr):
+    arr.sort()
+    return arr[0]
+
+def maximum(arr):
+    arr.sort()
+    return arr[-1]
